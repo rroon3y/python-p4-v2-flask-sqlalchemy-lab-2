@@ -1,0 +1,14 @@
+- [x] Run pipenv install in root
+- [x] Run cd server && pipenv run flask db init
+- [x] Run cd server && pipenv run flask db migrate -m "initial migration"
+- [x] Run cd server && pipenv run flask db upgrade head
+- [x] Edit server/models.py to add Review model and relationships to Customer/Item
+- [x] Run cd server && pipenv run flask db migrate -m 'add review'
+- [x] Run cd server && pipenv run flask db upgrade head
+- [x] Run cd server && python seed.py
+- [x] Run cd server && pipenv run pytest testing/review_test.py
+- [x] Edit server/models.py to add association proxy to Customer
+- [x] Run cd server && pipenv run pytest testing/association_proxy_test.py
+- [x] Edit server/models.py to add SerializerMixin and serialize_rules to all models
+- [x] Run cd server && pipenv run pytest testing/serialization_test.py
+- [x] Run cd server && pipenv run pytest
